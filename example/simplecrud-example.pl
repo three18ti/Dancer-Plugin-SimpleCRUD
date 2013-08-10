@@ -43,6 +43,13 @@ simple_crud(
     },
 );
 
+simple_crud(
+    record_title    => 'Employer',
+    db_table        => 'employer',
+    db_connection_name  => 'foo',
+    prefix          => '/employer',
+);
+
 get '/' => sub {
     redirect '/people';
 };
